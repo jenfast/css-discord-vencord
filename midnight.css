@@ -633,38 +633,22 @@ button.button__581d0 /* small buttons */,
 
 /* window controls */
 [class^='winButton'] > svg {
-	display: none;
+    display: none;
 }
 [class^='winButton'] {
-	background: none !important;
-	top: 0;
-	width: calc(var(--spacing) + 8px);
-	height: calc(var(--spacing) + 8px);
-	margin: -2px 4px 0px 0px;
-}
-[class^='winButtonClose'] {
-	margin: -2px calc(var(--spacing) - 4px) 0px 0px;
-}
-[class^='winButton']::after {
-	content: '';
-	height: 12px;
-	width: 12px;
-	border-radius: 12px;
-}
-[class^='winButton']:hover::after {
-	filter: brightness(0.8);
-}
-[class^='winButton']:active::after {
-	transform: scale(0.9);
+    background: none !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 [class^='winButtonClose']::after {
-	background-color: var(--dnd-indicator) !important;
+    content: '✕';
 }
 [class^='winButtonMinMax']:nth-child(3)::after {
-	background-color: var(--online-indicator) !important;
+    content: '—';
 }
 [class^='winButtonMinMax']:nth-child(4)::after {
-	background-color: var(--idle-indicator) !important;
+    content: '□';
 }
 
 /* custom dm button moon icon */
